@@ -1,0 +1,9 @@
+{
+  "name": "js-minifier",
+  "version": "1.0.0",
+  "description": "JS compression tool",
+  "main": "app.js",
+  "dependencies": {
+    "terser": "^5.19.2"
+  }
+}
