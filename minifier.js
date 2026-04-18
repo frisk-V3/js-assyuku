@@ -1,1 +1,1 @@
-const JSMinifier={minify:function(code){return code .replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm,'$1').replace(/\s+/g,' ').replace(/\s*([\{\}\(\)\[\]\=\+\-\*\/\,\;\:])\s*/g,'$1').trim();}};
+const JSMinifier={minify(code){return code .replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm,'$1').split(/([`"'])(?:(?=(\\?))\2.)*?\1/g).map((part,index)=>{if(index % 2===0){return part .replace(/\s+/g,' ').replace(/\s*([{}()\[\]=+\-*/,;:])\s*/g,'$1');}return part;}).join('').trim();}};
