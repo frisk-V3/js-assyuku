@@ -1,17 +1,1 @@
-"use strict";
-document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('runMinify');
-    const input = document.getElementById('sourceCode');
-    const output = document.getElementById('resultCode');
-    if (!btn || !input || !output)
-        return;
-    btn.addEventListener('click', () => {
-        const raw = input.value;
-        if (!raw) {
-            alert('コードを入力してください');
-            return;
-        }
-        const minified = JSMinifier.minify(raw);
-        output.value = minified;
-    });
-});
+"use strict";document.addEventListener('DOMContentLoaded',()=> {const a =document.getElementById('runMinify');const b =document.getElementById('sourceCode');const c =document.getElementById('resultCode');if (!a || !b || !c)return;a.addEventListener('click',()=> {const d =b.value;if (!d){alert('コードを入力してください');return;}const e =JSMinifier.minify(d);c.value =e;});});
