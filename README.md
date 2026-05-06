@@ -1,4 +1,4 @@
-# ⚡️ Simple JS Minifier
+#  Simple JS Minifier
 
 [![License: MIT](https://shields.io)](https://opensource.org)
 
